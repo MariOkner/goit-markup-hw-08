@@ -1,0 +1,154 @@
+.footer {
+    display: block;
+    background-color: $footer-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-adress {
+    margin-top: 20px;
+}
+
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-link-address,
+.footer-link-nav {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $secondary-text-color;
+}
+
+.footer-link-nav {
+    color: rgba(255, 255, 255, 0.6);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+/* ------------------------------Присоединяйтесь-------------- */
+/* .footer-soc {
+    margin-left: 70px;
+    padding-top: 12px;
+} */
+
+.footer-main {
+    align-items: baseline;
+}
+
+.footer-title,
+.footer-signup-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $secondary-text-color;
+
+    margin-bottom: 20px;
+}
+
+.footer-soc-list {
+    display: flex;
+}
+
+.footer-soc-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-soc-link {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $secondary-text-color;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+.footer-soc-icon {
+    fill: currentColor;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.footer-email input {
+    width: 358px;
+    padding: 15px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: $radius;
+
+    background-color: transparent;
+    color: $secondary-text-color;
+    &::placeholder {
+        font-size: 16px;
+        line-height: 20px;
+    
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.footer-button {
+    width: 200px;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 12px;
+
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: $secondary-text-color;
+    border: transparent;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: $radius;
+}
+
+.footer-signup-arrow {
+    margin-left: 10px;
+}
