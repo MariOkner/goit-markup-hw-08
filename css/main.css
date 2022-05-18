@@ -33,11 +33,26 @@ a {
 }
 
 .conteiner {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .conteiner {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    width: 1200px;
+  }
 }
 
 .header {
@@ -132,12 +147,12 @@ a {
 }
 
 .hero {
-  width: 100%;
-  margin-right: 10px;
+  margin-right: auto;
   margin-left: auto;
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #C4C4C4;
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/back-hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -152,9 +167,18 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   width: 360px;
+  margin: 0 auto 30px auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
 }
 
 .hero-button {
+  display: block;
   color: #FFFFFF;
   background-color: #2196F3;
   font-family: inherit;
@@ -191,8 +215,14 @@ a {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section.section--nopadding {
@@ -226,16 +256,15 @@ a {
 }
 
 .features {
-  display: flex;
-  flex-basis: auto;
+  margin-bottom: -30px;
 }
 
-.features-item:not(:last-child) {
-  margin-right: 30px;
+.features-item {
+  margin-bottom: 30px;
 }
 
 .features-icon {
-  width: 270px;
+  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background-color: #F5F4FA;
@@ -243,6 +272,16 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .features-icon {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-icon {
+    width: 270px;
+  }
 }
 
 .features-bottom-title {
@@ -252,6 +291,11 @@ a {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 480px) {
+  .features-bottom-title {
+    text-align: center;
+  }
 }
 
 .features-text {
