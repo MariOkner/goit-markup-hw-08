@@ -1,33 +1,60 @@
 .footer {
-    display: block;
-    background-color: $footer-color;
     padding-top: 60px;
     padding-bottom: 60px;
+    display: block;
+    background-color: $footer-color;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }     
 }
 
-.footer-main {
-    display: flex;
-    justify-content: space-between;
+.footer--main {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
 }
 
-.footer-adress {
+.adress--soc {
+    @media screen and (min-width: 780px) {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }   
+}
+
+.main__adress {
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0px;
+    }
+}
+
+.footer__adress {
     margin-top: 20px;
 }
 
-.footer-item:not(:last-child) {
-    margin-bottom: 9px;
+.footer__item:not(:last-child) {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }
 
-.footer-link-address,
-.footer-link-nav {
+.footer__link-address,
+.footer__link-nav {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    text-align: center;
     color: $secondary-text-color;
 }
 
-.footer-link-nav {
+.footer__link-nav {
     color: rgba(255, 255, 255, 0.6);
 
     transition-property: color;
@@ -41,20 +68,23 @@
 }
 
 /* ------------------------------Присоединяйтесь-------------- */
-/* .footer-soc {
-    margin-left: 70px;
-    padding-top: 12px;
-} */
 
-.footer-main {
-    align-items: baseline;
+.main__soc {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 780px) and (max-width: 1199px) {
+        margin-left: 165px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
 }
 
-.footer-title,
-.footer-signup-title {
+.footer__title--soc,
+.footer__title--signup {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $secondary-text-color;
@@ -62,23 +92,24 @@
     margin-bottom: 20px;
 }
 
-.footer-soc-list {
+.footer__list--soc {
     display: flex;
+    justify-content: center;
 }
 
-.footer-soc-item:not(:last-child) {
+.footer__item--soc:not(:last-child) {
     margin-right: 10px;
 }
 
-.footer-soc-link {
+.footer__link--soc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     color: $secondary-text-color;
 
@@ -92,19 +123,24 @@
     }
 }
 
-.footer-soc-icon {
+.footer__icon--soc {
     fill: currentColor;
 }
 
-.footer-form {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+/* ------------------------------Подпишитесь-------------- */
+
+.footer__form {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
 }
 
-.footer-email input {
-    width: 358px;
+.footer-input {
+    width: 100%;
     padding: 15px 16px;
+    margin-bottom: 20px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -113,6 +149,7 @@
 
     background-color: transparent;
     color: $secondary-text-color;
+    
     &::placeholder {
         font-size: 16px;
         line-height: 20px;
@@ -122,24 +159,30 @@
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
     }
+
+     @media screen and (min-width: 780px) {
+        width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-bottom: 0px;
+        margin-right: 12px;
+    }
 }
 
-.footer-button {
-    width: 200px;
-    height: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 12px;
+.footer__button {
+    padding: 10px 28px;
+    margin-left: auto;
+    margin-right: auto;
 
     cursor: pointer;
 
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
     letter-spacing: 0.06em;
 
     display: flex;
-    justify-content: center;
     align-items: center;
 
     color: $secondary-text-color;
@@ -149,6 +192,6 @@
     border-radius: $radius;
 }
 
-.footer-signup-arrow {
+.footer__arrow--signup {
     margin-left: 10px;
 }

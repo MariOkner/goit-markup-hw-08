@@ -20,21 +20,15 @@
 }
 
 .features__icon {
-    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // width: 450px;
     height: 120px;
     margin-bottom: 30px;
     background-color: $secondary-bg-color;
     border-radius: $radius;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @media screen and (min-width: 768px) {
-        width: 354px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 270px;
-    }
 }
 
 .features__title {
@@ -43,7 +37,9 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+   
     margin-bottom: 10px;
+   
     @media screen and (max-width: 767px) {
         text-align: center;
     }

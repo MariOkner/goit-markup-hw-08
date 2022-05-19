@@ -1,14 +1,20 @@
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
+    &.section--nopadding {
+        padding-top: 0px;
+    }
+   
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
         padding-bottom: 94px;
     }
 }   
 
-.section.section--nopadding {
-    padding-top: 0px;
+.section--nopadding {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }
 
 .section--another-background {
@@ -22,6 +28,7 @@
     line-height: 1.18;
     text-align: center;
     margin-bottom: 30px;
+   
     @media screen and (min-width: 1200px) {
         margin-bottom: 50px;
         font-size: 36px;
