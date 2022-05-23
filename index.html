@@ -13,9 +13,67 @@
     </head>
     <body>
         <!--Шапка сайта-->
-        <!-- <header class="header">
+        <header class="header">
             <div class="conteiner header__conteiner">
-                <a href="" class="logo">Web<span class="logo__darck">Studio</span> </a>
+                <div class="header__top">
+                    <a href="" class="logo">Web<span class="logo__darck">Studio</span> </a>
+                    <button 
+                    type="button" 
+                    class="header__top--button" 
+                    aria-expanded="false" 
+                    aria-controls="mob-menu-nav"
+                    data-menu-button>
+                        <svg class="header__icon--button" width="40" height="40" aria-label="Переключатель мобильного меню">
+                            <use class="header__icon--close" href="./images/symbol-defs.svg#icon-close_40px"></use>
+                            <use class="header__icon--menu" href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                        </svg>
+                    </button>
+                    <div class="mob-menu__nav" id="mob-menu-nav" data-menu>
+                        <div class="mob-menu__container">
+                            <div class="mob-menu__nav--top">
+                                <ul class="mob-menu__list">
+                                    <li class="mob-menu__item">
+                                        <a href="" class="mob-menu__link mob-menu__link--current">Студия </a>
+                                    </li>
+                                    <li class="mob-menu__item">
+                                        <a href="./portfolio.html" class="mob-menu__link">Портфолио </a>
+                                    </li>
+                                    <li class="mob-menu__item">
+                                        <a href="" class="mob-menu__link">Контакты </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mob-menu__nav--bottom">
+                                <ul class="mob-conect__list">
+                                    <li class="mob-conect__item">
+                                        <a href="tel:+380961111111" class="mob-conect__link">
+                                            +38 096 111 11 11
+                                        </a>
+                                    </li>
+                                    <li class="mob-conect__item">
+                                        <a href="mailto:info@devstudio.com" class="mob-conect__link--email">
+                                            info@devstudio.com
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="mob-soc__list">
+                                    <li class="mob-soc__item">
+                                        <a href="Instagram" class="mob-soc__link">Instagram</a>
+                                    </li>
+                                    <li class="mob-soc__item">
+                                        <a href="Twitter" class="mob-soc__link">Twitter</a>
+                                    </li>
+                                    <li class="mob-soc__item">
+                                        <a href="Facebook" class="mob-soc__link">Facebook</a>
+                                    </li>
+                                    <li class="mob-soc__item">
+                                        <a href="LinkedIn" class="mob-soc__link">LinkedIn</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <nav class="navigations">
                     <ul class="menu-list">
                         <li class="menu-list__item">
@@ -46,7 +104,7 @@
                     </li>
                 </ul>
             </div>       
-        </header> -->
+        </header>
             <!--Уникальное содержание страницы-->
             <main>                
                 <!-- Блок герой, т.е верхняя часть веб-страницы -->
@@ -451,5 +509,6 @@
             </div>
         </div>  
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
     </body>
 </html>
