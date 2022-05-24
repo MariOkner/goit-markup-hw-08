@@ -15,22 +15,17 @@
         <!--Шапка сайта-->
         <header class="header">
             <div class="conteiner header__conteiner">
-                <div class="header__top">
+                <nav class="header__navigation">
                     <a href="" class="logo">Web<span class="logo__darck">Studio</span> </a>
-                    <button 
-                    type="button" 
-                    class="header__top--button" 
-                    aria-expanded="false" 
-                    aria-controls="mob-menu-nav"
-                    data-menu-button>
-                        <svg class="header__icon--button" width="40" height="40" aria-label="Переключатель мобильного меню">
-                            <use class="header__icon--close" href="./images/symbol-defs.svg#icon-close_40px"></use>
-                            <use class="header__icon--menu" href="./images/symbol-defs.svg#icon-menu_40px"></use>
-                        </svg>
+                    <button type="button" class="header__top--button" aria-expanded="false" aria-controls="mob-menu__container" data-menu-button>
+                            <svg class="header__icon--button" width="40" height="40" aria-label="Переключатель мобильного меню">
+                                <use class="header__icon--close" href="./images/symbol-defs.svg#icon-close_40px"></use>
+                                <use class="header__icon--menu" href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                            </svg>
                     </button>
-                    <div class="mob-menu__nav" id="mob-menu-nav" data-menu>
-                        <div class="mob-menu__container">
-                            <div class="mob-menu__nav--top">
+                    <div class="mob-menu__container" id="mob-menu__container" data-menu>
+                        <div class="adaptive--container">
+                            <div class="mob-menu__nav">
                                 <ul class="mob-menu__list">
                                     <li class="mob-menu__item">
                                         <a href="" class="mob-menu__link mob-menu__link--current">Студия </a>
@@ -43,7 +38,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="mob-menu__nav--bottom">
+                            <div class="mob-menu__box">
                                 <ul class="mob-conect__list">
                                     <li class="mob-conect__item">
                                         <a href="tel:+380961111111" class="mob-conect__link">
@@ -73,8 +68,12 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <nav class="navigations">
+                </nav>
+
+
+
+                <nav class="navigations__tablet-desctop">
+                    <a href="" class="logo">Web<span class="logo__darck">Studio</span> </a>
                     <ul class="menu-list">
                         <li class="menu-list__item">
                             <a href="" class="menu-list__link menu-list__link--current">Студия </a>
@@ -86,23 +85,28 @@
                             <a href="" class="menu-list__link">Контакты </a>
                         </li>
                     </ul>
+                    <ul class="conect-list">
+                        <li class="conect-list__item">
+                            <a href="mailto:info@devstudio.com" class="conect-list__link">
+                                <svg class="conect-list__icon" width="16" height="12">
+                                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                                </svg>info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="conect-list__item">
+                            <a href="tel:+380961111111" class="conect-list__link">
+                                <svg class="conect-list__icon--tel" width="10" height="16">
+                                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                                </svg>+38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
-                <ul class="conect-list">
-                    <li class="conect-list__item"> 
-                        <a href="mailto:info@devstudio.com" class="conect-list__link"> 
-                            <svg class="conect-list__icon" width="16" height="12">
-                                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                            </svg>info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="conect-list__item"> 
-                        <a href="tel:+380961111111" class="conect-list__link"> 
-                            <svg class="conect-list__icon" width="10" height="16">
-                                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                            </svg>+38 096 111 11 11 
-                        </a> 
-                    </li>
-                </ul>
+                
+           
+           
+           
+           
             </div>       
         </header>
             <!--Уникальное содержание страницы-->
