@@ -1,6 +1,6 @@
 .header {
     position: relative;
-   
+    
     background-color: $secondary-text-color;
 
     border-bottom-width: 1px;
@@ -16,6 +16,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    // border-bottom-width: 1px;
+    // border-bottom-style: solid;
+    // border-bottom-color: #ECECEC;
+    
     @media screen and (min-width: 1200px) {
         justify-content: flex-end;
     }
@@ -87,8 +92,10 @@
 }
 
 .conect-list__item:not(:last-child) {
+    margin-bottom: 10px;
     @media screen and (min-width: 1200px) {
         margin-right: 30px;
+        margin-bottom: 0px;
     }
 }
 
