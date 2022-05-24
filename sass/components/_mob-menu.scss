@@ -1,74 +1,71 @@
 .header__navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    // position: relative;
-
-    // border-bottom-width: 1px;
-    // border-bottom-style: solid;
-    // border-bottom-color: #ECECEC;
-    
     @media screen and (min-width: 768px) {
         display: none;
     }
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
 }
 
-.header__top--button {
-    padding-top: 10px;
-    padding-bottom: 10px;
+.header__open-button {
+    padding: 10px 0;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 
-    & .header__icon--close {
-        display: none;
-    }
-
-    &.is-open .header__icon--close {
-        display: block;
-    }
-
-    &.is-open .header__icon--menu {
-        display: none;
-    }
-}
-
-.header__icon--button {
-    display: block;
     fill: $title-text-color;
-
+    
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
     &:hover,
     &:focus {
         fill: $accent-color;
     }
-}
+}            
 
-.mob-menu__container {
-    display: none;
+.mob-menu {  
     position: fixed;
-    z-index: 10;
-    
-    padding: 48px 40px;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-
     background: $secondary-text-color;
+    & .conteiner {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between; 
 
-    &.is-open {
-        display: block;
-    }  
+        padding: 48px 40px;
+        overflow-y: auto;
+    }
 }
 
-.adaptive--container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-between; 
+.header__close-button {
+    display: block;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: auto;
+    padding: 10px 15px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    fill: $title-text-color;
+    
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
 }
 
 .mob-menu__item {
@@ -158,4 +155,8 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.no-scroll {
+    overflow: hidden;
 }

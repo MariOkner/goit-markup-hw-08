@@ -17,9 +17,8 @@
     align-items: center;
     justify-content: space-between;
 
-    // border-bottom-width: 1px;
-    // border-bottom-style: solid;
-    // border-bottom-color: #ECECEC;
+        padding-left: 15px;
+        padding-right: 15px;
     
     @media screen and (min-width: 1200px) {
         justify-content: flex-end;
@@ -39,8 +38,8 @@
 }
 
 .menu-list__link {
-    position: relative;
     display: block;
+    position: relative;
 
     padding-top: 32px;
     padding-bottom: 32px;
@@ -100,14 +99,16 @@
 }
 
 .conect-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     font-weight: 500;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.02em;
 
     color: $main-text-color;
-    align-items: center;
-    justify-content: center;
     
     transition-property: color;
     transition-duration: 250ms;
