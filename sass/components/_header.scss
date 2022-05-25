@@ -12,25 +12,19 @@
     @media screen and (max-width: 767px) {
             display: none;
     }
+}
 
+.header__main--nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-        padding-left: 15px;
-        padding-right: 15px;
-    
-    @media screen and (min-width: 1200px) {
-        justify-content: flex-end;
-    }
 }
 
 .menu-list {
     display: flex;
     @media screen and (min-width: 1200px) {
         margin-left: auto;
-    }
-    
+    }   
 }
 
 .menu-list__item:not(:last-child) {
@@ -99,10 +93,6 @@
 }
 
 .conect-list__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     font-weight: 500;
     font-size: 12px;
     line-height: 1.17;

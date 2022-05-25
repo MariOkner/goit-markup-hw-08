@@ -61,22 +61,16 @@ a {
   border-bottom-color: #ECECEC;
 }
 
-.navigations__tablet-desctop {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 @media screen and (max-width: 767px) {
   .navigations__tablet-desctop {
     display: none;
   }
 }
-@media screen and (min-width: 1200px) {
-  .navigations__tablet-desctop {
-    justify-content: flex-end;
-  }
+
+.header__main--nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .menu-list {
@@ -147,9 +141,6 @@ a {
 }
 
 .conect-list__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
@@ -224,6 +215,7 @@ a {
 
 .mob-menu {
   position: fixed;
+  z-index: 5;
   top: 0;
   left: 0;
   width: 100vw;
