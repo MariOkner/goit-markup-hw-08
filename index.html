@@ -26,7 +26,7 @@
                     </button>
                 </div>
             </div>
-            <div class="mob-menu">
+            <div class="mob-menu is-hidden">
                 <div class="conteiner">
                     <button type="button" class="header__close-button">
                         <svg class="header__icon-button" width="40" height="40" aria-label="Переключатель мобильного меню">
@@ -167,15 +167,42 @@
                         <h2 class="section__title">Чем мы занимаемся</h2>
                         <ul class="work-list">
                             <li class="work__item">
-                                <img src="./images/img1.jpg" alt="разработка кода с нуля" width="370" />
+                                <picture>
+                                    <source 
+                                        srcset="
+                                        ./images/work/img1-desk-1x.jpg    1x,
+                                        ./images/work/img1-desk-2x.jpg    2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <img src="./images/work/img1-desk-1x.jpg" alt="разработка кода с нуля" width="370" />
+                                </picture>    
                                 <p class="work__text">Десктопные приложения</p>
                             </li>
                             <li class="work__item">
-                                <img src="./images/img2.jpg" alt="разработка мобильных приложений" width="370" />
+                                <picture>
+                                    <source 
+                                        srcset="
+                                        ./images/work/img2-desk-1x.jpg    1x,
+                                        ./images/work/img2-desk-2x.jpg    2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <img src="./images/work/img2-desk-1x.jpg" alt="разработка мобильных приложений" width="370" />
+                                </picture>     
                                 <p class="work__text">Мобильные приложения</p>
                             </li>
                             <li class="work__item">
-                                <img src="./images/img3.jpg" alt="подбор цвета при разработке сайта" width="370" />
+                                <picture>
+                                    <source 
+                                        srcset="
+                                        ./images/work/img3-desk-1x.jpg    1x,
+                                        ./images/work/img3-desk-2x.jpg    2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <img src="./images/work/img3-desk-1x.jpg" alt="подбор цвета при разработке сайта" width="370" />
+                                </picture>
                                 <p class="work__text">Дизайнерские решения</p>
                             </li>
                         </ul>
@@ -187,7 +214,30 @@
                         <h2 class="section__title">Наша команда</h2>
                         <ul class="team-list">
                             <li class="team-list__item">
-                                <img src="./images/img4.jpg" alt="фото игоря демьяненко" width="270"/>
+                                <picture>
+                                    <source 
+                                        srcset="
+                                        ./images/team/igor-desk-1x.jpg    1x,
+                                        ./images/team/igor-desk-2x.jpg    2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source 
+                                        srcset="
+                                        ./images/team/igor-tab-1x.jpg    1x,
+                                        ./images/team/igor-tab-2x.jpg    2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source 
+                                        srcset="
+                                        ./images/team/igor-mob-1x.jpg    1x,
+                                        ./images/team/igor-mob-2x.jpg    2x
+                                        "
+                                        media="(min-width:320px)"
+                                    />
+                                    <img src="./images/team/igor-mob-1x.jpg" alt="фото игоря демьяненко" width=100% />
+                                </picture>                              
                                 <div class="team-list__card">
                                     <h3  class="team-list__title">Игорь Демьяненко</h3>
                                     <p class="team-list__text">Product Designer</p>     
@@ -223,8 +273,31 @@
                                     </ul>
                                 </div>                                                           
                             </li>
-                            <li class="team-list__item">                            
-                                <img src="./images/img5.jpg" alt="фото ольги репиной" width="270" />                               
+                            <li class="team-list__item">
+                                <picture>
+                                    <source 
+                                        srcset="
+                                        ./images/team/olga-desk-1x.jpg    1x,
+                                        ./images/team/olga-desk-2x.jpg    2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source 
+                                        srcset="
+                                        ./images/team/olga-tab-1x.jpg    1x,
+                                        ./images/team/olga-tab-2x.jpg    2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source 
+                                        srcset="
+                                        ./images/team/olga-mob-1x.jpg    1x,
+                                        ./images/team/olga-mob-2x.jpg    2x
+                                        "
+                                        media="(min-width:320px)"
+                                    />
+                                    <img src="./images/team/olga-mob-1x.jpg" alt="фото ольги репиной" width=100% />
+                                </picture>                                                           
                                 <div class="team-list__card">
                                     <h3 class="team-list__title">Ольга Репина</h3>
                                     <p class="team-list__text">Frontend Developer</p>                                
@@ -260,8 +333,31 @@
                                     </ul>
                                 </div>                                
                             </li>
-                            <li class="team-list__item">                            
-                                <img src="./images/img6.jpg" alt="фото николая тарасова" width="270" />                                
+                            <li class="team-list__item">
+                                <picture>
+                                    <source 
+                                        srcset="
+                                        ./images/team/niko-desk-1x.jpg    1x,
+                                        ./images/team/niko-desk-2x.jpg    2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source 
+                                        srcset="
+                                        ./images/team/niko-tab-1x.jpg    1x,
+                                        ./images/team/niko-tab-2x.jpg    2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source 
+                                        srcset="
+                                        ./images/team/niko-mob-1x.jpg    1x,
+                                        ./images/team/niko-mob-2x.jpg    2x
+                                        "
+                                        media="(min-width:320px)"
+                                    />
+                                    <img src="./images/team/niko-mob-1x.jpg" alt="фото николая тарасова" width=100% />
+                                </picture>                                                                                            
                                 <div class="team-list__card">   
                                     <h3 class="team-list__title">Николай Тарасов</h3>
                                     <p class="team-list__text">Marketing</p>                                
@@ -297,8 +393,31 @@
                                     </ul>
                                 </div>                                   
                             </li>
-                            <li class="team-list__item">                            
-                                <img src="./images/img7.jpg" alt="фото михаила ермакова" width="270" />   
+                            <li class="team-list__item">
+                                <picture>
+                                    <source 
+                                        srcset="
+                                        ./images/team/miha-desk-1x.jpg    1x,
+                                        ./images/team/miha-desk-2x.jpg    2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source 
+                                        srcset="
+                                        ./images/team/miha-tab-1x.jpg    1x,
+                                        ./images/team/miha-tab-2x.jpg    2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source 
+                                        srcset="
+                                        ./images/team/miha-mob-1x.jpg    1x,
+                                        ./images/team/miha-mob-2x.jpg    2x
+                                        "
+                                        media="(min-width:320px)"
+                                    />
+                                    <img src="./images/team/miha-mob-1x.jpg" alt="фото михаила ермакова" width=100% />
+                                </picture>                                                              
                                 <div class="team-list__card">                             
                                     <h3 class="team-list__title">Михаил Ермаков</h3>
                                     <p class="team-list__text">UI Designer</p>  
