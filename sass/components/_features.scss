@@ -24,7 +24,6 @@
     justify-content: center;
     align-items: center;
 
-    // width: 450px;
     height: 120px;
     margin-bottom: 30px;
     background-color: $secondary-bg-color;
@@ -32,13 +31,14 @@
 }
 
 .features__title {
-    color: $title-text-color;
+    margin-bottom: 10px;
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
    
-    margin-bottom: 10px;
+    color: $title-text-color;
    
     @media screen and (max-width: 767px) {
         text-align: center;

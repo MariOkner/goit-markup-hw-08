@@ -9,12 +9,12 @@
 .work__item {
     position: relative;
     &::before {
+        position: absolute;
+        bottom: 0;
+
         content: "";
         width: 100%;
         min-height: 70px;
-
-        position: absolute;
-        bottom: 0;
 
         background-color: rgba(47, 48, 58, 0.8);
     }
@@ -23,11 +23,10 @@
 .work__text {
     position: absolute;
 
+    width: 100%;
     bottom: 0px;
     padding-top: 27px;
     padding-bottom: 27px;
-
-    width: 100%;
 
     font-weight: 700;
     font-size: 14px;

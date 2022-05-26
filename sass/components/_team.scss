@@ -32,19 +32,22 @@
 }
 
 .team-list__title {
-    color: $title-text-color;
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    margin-bottom: 10px;
+   
+    color: $title-text-color;
 }
 
 .team-list__text {
+    margin-bottom: 16px;
+
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    margin-bottom: 16px;
 }
 
 .soc-list {
@@ -57,15 +60,16 @@
 }
 
 .soc-list__link {
-    width: 44px;
-    height: 44px;
-    background-color: transparent;
-    border-radius: 50%;
-    color: #AFB1B8;
-
     display: flex;
     justify-content: center;
     align-items: center;
+
+    width: 44px;
+    height: 44px;
+   
+    background-color: transparent;
+    border-radius: 50%;
+    color: #AFB1B8;
 
     transition-property: color, background-color;
     transition-duration: 250ms;
